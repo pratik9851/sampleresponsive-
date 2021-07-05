@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+          
+            width: 90%;
+            
+            margin: auto;
+            justify-content: center;
+        }
+        .container1{
+            width: 95%;
+            height: 45%;
+            
+            margin: auto;
+            
+        }
+        .container1>h6{
+            color: tomato;
+            text-align: center;
+        
+        }
+        .container1>h3{
+            text-align: center;
+            font-family: serif;
+        }
+        .art{
+            width: 33%;
+        
+        }
+        .subcontainer{
+            display: flex;
+            
+            justify-content:center ;
+            width: 100%;
+           
+        }
+        .button{
+            background-color: red;
+            height: 5%;
+            
+        }
+        .but{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .container2{
+            width: 95%;
+            height: 30%;
+            text-align: center;
+            margin: auto;
+            
+        }
+        .container2>h6{
+            color: tomato;
+            text-align: center;
+        
+        }
+        .container2>.head{
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+        .container2>.para{
+            font-size: 13px;
+            color: silver;
+            
+        }
+        .container3{
+            margin-top: 20px;
+            display: grid;
+            
+            grid-gap:10px ;
+            grid-template: "a  b  c"
+                           "d  e  f";
+        }
+        .child1{
+            grid-area: a;
+            
+        }
+        .child2{
+            grid-area: b;
+            
+        }
+        .child3{
+            grid-area: c;
+            
+            
+        }
+        .child4{
+            grid-area: d;
+            
+            
+        }
+        .child5{
+            grid-area: e;
+            
+        }
+        .child6{
+            grid-area: f;
+            
+        }
+       .child1>img{
+           float: left;
+           height: 100%;
+           width: 25%;
+           margin-right:5px ;
+       }
+       .child2>img{
+           float: left;
+           height: 100%;
+           width: 25%;
+           margin-right:5px ;
+           
+       }
+       .child3>img{
+           float: left;
+           height: 100%;
+           width: 25%;
+           margin-right:5px ;
+       }
+       .child4>img{
+           float: left;
+           height: 100%;
+           width: 25%;
+           margin-right:5px ;
+       }
+       .child5>img{
+           float: left;
+           height: 100%;
+           width: 25%;
+           margin-right:5px ;
+       }
+       .child6>img{
+           float: left;
+           height: 100%;
+           width: 25%;
+           margin-right:5px ;
+       }
+       .c>span{
+           font-size: 15px;
+           color: silver;
+       }
+       .c>p{
+           font-weight: bold;
+       }
+         @media(max-width:750px){
+            .container3{
+           
+            grid-template: "a b"
+                           "c d"
+                           "e f";
+                           
+        }
+        
+        @media(max-width:500px){
+            .container3{
+           
+            grid-template: "a"
+                           "b"
+                           "c"
+                           "d"
+                           "e"
+                           "f";
+                           
+        }
+         }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container1">
+           <h6>NEWS & UPDATE</h6>
+           <h3>OUR BLOG POST</h3>
+           <div class="subcontainer">
+            <div class="art"> <img src="https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg" alt="pic">
+                <p>29 january 2019</p>
+                <span>Architetural Art /modern</span>
+            </div>
+
+             <div class="art">
+                <img src="https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg" alt="pic">
+                <p>29 january 2019</p>
+                <span>Architetural Art /modern</span> <br>
+                
+             </div>
+             <div class="art">
+                <img src="https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg" alt="pic">
+                <p>29 january 2019</p>
+                <span>Architetural Art /modern</span>
+             </div>
+             
+             </div>
+            
+        </div>
+        <div class="but">
+            <button class="button">view all post</button>
+         </div>
+         <div class="container2">
+            <h6>SERVICES</h6>
+            <span class="head">OUR SERVICES</span> <br>
+            <span class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, enim ac.</span>
+
+         </div>
+         <div class="container3">
+             <div class="child1 c">
+                 <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="pic">
+                 <p>Innovative structure</p>
+                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla sem'</span>
+             </div>
+             <div class="child2 c"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="pic">
+                <p>Innovative structure</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla sem</span></div>
+             <div class="child3 c"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="pic">
+                <p>Innovative structure</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla sem</span></div>
+             <div class="child4 c"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="pic">
+                <p>Innovative structure</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla sem</span></div>
+             <div class="child5 c"> <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="pic">
+                <p>Innovative structure</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla sem</span></div>
+             <div class="child6 c"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="pic">
+                <p>Innovative structure</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla sem.</span></div>
+         </div>
+         
+    </div>
+</body>
+</html>
